@@ -1,0 +1,35 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "202304200857_create_table_class",
+        "author": "author_liquibase",
+        "changes": [
+          {
+            "createTable": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "INT",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "name",
+                    "type": "VARCHAR(40)"
+                  }
+                }
+              ],
+              "tableName": "classes"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
